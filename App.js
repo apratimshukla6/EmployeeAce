@@ -13,7 +13,7 @@ const resolvers = require('./graphql/resolvers');
 
 // Initialize Express application
 const app = express();
-const port = 5000;
+const port = process.env.PORT || 5000;
 
 // Apply CORS and JSON middleware for handling cross-origin requests and JSON payloads
 app.use(cors());
